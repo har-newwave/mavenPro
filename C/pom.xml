@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.atguigu.maven</groupId>
+    <artifactId>C</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+    <!--
+         <scope>compile</scope>默认的依赖范围：
+        被compile 修饰的jar包作用域最大  compile 是scope 的默认属性
+        1.具备传递性
+        2.部署到 Tomcat 服务器上运行时要放在 WEB-INF的lib目录下
+
+         <scope>test</scope>
+         1.不具备传递性
+        [2]main目录下的Java代码不能访问这个范围的依赖
+        [3]test目录下的Java代码可以访问这个范围的依赖
+        [4]部署到Tomcat服务器上运行时不会放在WEB-INF的lib目录下
+
+        <scope>provided</scope>
+         1.不具备传递性
+        [2]main目录下的Java代码可以访问这个范围的依赖
+        [3]test目录下的Java代码可以访问这个范围的依赖
+        [4]部署到Tomcat服务器上运行时不会放在WEB-INF的lib目录下
+        (tomcat 中包含被provided 修饰的jar包)
+    -->
+<!--            <scope>provided</scope>-->
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+
+    </dependencies>
+
+
+</project>
